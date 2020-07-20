@@ -15,8 +15,12 @@ class TestCase(unittest.TestCase):
         input =  "1"
         self.assertFalse(check_pwd(input))
 
-    def test1(self):
+    def test2(self):
         input =  "2"
+        self.assertFalse(check_pwd(input))
+    
+    def test3(self):
+        input =  "11"
         self.assertFalse(check_pwd(input))
 
 if __name__ == '__main__':
