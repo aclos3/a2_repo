@@ -7,7 +7,9 @@
 
 
 def check_pwd(testStr):
-    if(int(testStr) >= 0 and int(testStr) <= 9):
-        return False
+    for x in range (0, len(testStr)):
+
+        if(int(testStr[x]) >= 0 and int(testStr[x]) <= 9):
+            return False
 
     return True
