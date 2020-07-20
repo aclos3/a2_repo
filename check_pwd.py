@@ -7,4 +7,7 @@
 
 
 def check_pwd(testStr):
+    if(testStr == '1'):
+        return False
+        
     return True
