@@ -12,23 +12,23 @@ from check_pwd import check_pwd
 
 class TestCase(unittest.TestCase):
     def test1(self):
-        input =  "1"
+        input = "1"
         self.assertFalse(check_pwd(input))
 
     def test2(self):
-        input =  "2"
+        input = "2"
         self.assertFalse(check_pwd(input))
     
     def test3(self):
-        input =  "11"
+        input = "11"
         self.assertFalse(check_pwd(input))
 
     def test4(self):
-        input =  "12345678"
+        input = "abcdefgh"
         self.assertFalse(check_pwd(input))
     
-    def test5(self):
-        input =  "12345678a"
-        self.assertFalse(check_pwd(input))
+    #def test5(self):
+    #    input = "12345678a!"
+    #    self.assertFalse(check_pwd(input))
 if __name__ == '__main__':
     unittest.main()
