@@ -42,6 +42,10 @@ class TestCase(unittest.TestCase):
     def test8(self):
         input = "~`!@#$%^&*()_+-="
         self.assertFalse(check_pwd(input))
+
+    def test9(self):
+        input = "!aBcDeFg"
+        self.assertFalse(check_pwd(input))
     
 if __name__ == '__main__':
     unittest.main()
