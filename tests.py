@@ -24,7 +24,7 @@ class TestCase(unittest.TestCase):
         self.assertFalse(check_pwd(input))
 
     def test4(self):
-        input = "abcdefgh"
+        input = "a"
         self.assertFalse(check_pwd(input))
     
     #def test5(self):
