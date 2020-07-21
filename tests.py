@@ -18,7 +18,7 @@ class TestCase(unittest.TestCase):
     def test2(self):
         input = "2"
         self.assertFalse(check_pwd(input))
-    
+
     def test3(self):
         input = "11"
         self.assertFalse(check_pwd(input))
@@ -26,11 +26,11 @@ class TestCase(unittest.TestCase):
     def test4(self):
         input = "a"
         self.assertFalse(check_pwd(input))
-    
+
     def test5(self):
         input = "aaaaaaaa"
         self.assertFalse(check_pwd(input))
-    
+
     def test6(self):
         input = "baaaaaaa"
         self.assertFalse(check_pwd(input))
@@ -50,10 +50,10 @@ class TestCase(unittest.TestCase):
     def test10(self):
         input = "!aBcDeFg2"
         self.assertFalse(check_pwd(input))
-    
+
     def test11(self):
         input = "!aBcDeFg2!aBcDeFg2!aBcDeFg2"
         self.assertFalse(check_pwd(input))
-        
+
 if __name__ == '__main__':
     unittest.main()
