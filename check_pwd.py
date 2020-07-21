@@ -34,7 +34,7 @@ def check_pwd(testStr):
             if(testStr[x] == VALID_SPECIAL[y]):
                 specialCount = specialCount + 1
         
-    if(lowerCount == 0 or upperCount == 0 or specialCount == 0):
+    if(lowerCount == 0 or upperCount == 0 or specialCount == 0 or numCount == 0):
         return False
 
     return True
