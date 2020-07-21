@@ -34,6 +34,10 @@ class TestCase(unittest.TestCase):
     def test6(self):
         input = "baaaaaaa"
         self.assertFalse(check_pwd(input))
+
+    def test7(self):
+        input = "BAAAAAAA"
+        self.assertFalse(check_pwd(input))
     
 if __name__ == '__main__':
     unittest.main()
