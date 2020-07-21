@@ -47,9 +47,9 @@ class TestCase(unittest.TestCase):
         input = "!aBcDeFg"
         self.assertFalse(check_pwd(input))
 
-    def test10(self):
-        input = "!aBcDeFg2"
-        self.assertFalse(check_pwd(input))
+    # def test10(self):
+    # input = "!aBcDeFg2"
+    # self.assertFalse(check_pwd(input))
 
     def test11(self):
         input = "!aBcDeFg2!aBcDeFg2!aBcDeFg2"
