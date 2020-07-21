@@ -15,7 +15,7 @@ def check_pwd(testStr):
     upperCount = 0
     specialCount = 0
 
-    if(len(testStr) < 8):
+    if(len(testStr) < 8 or len(testStr) > 20):
         return False
     
     for x in range (0, len(testStr)):    
