@@ -33,7 +33,7 @@ def check_pwd(testStr):
         for y in range (0, len(VALID_SPECIAL)):
             if(testStr[x] == VALID_SPECIAL[y]):
                 specialCount = specialCount + 1
-        
+    print("lc: " + str(lowerCount) + "  uc: " + str(upperCount) + "  sc: " + str(specialCount) + "   nc: " + str(numCount) )
     if(lowerCount == 0 or upperCount == 0 or specialCount == 0 or numCount == 0):
         return False
 

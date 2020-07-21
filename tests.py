@@ -46,6 +46,10 @@ class TestCase(unittest.TestCase):
     def test9(self):
         input = "!aBcDeFg"
         self.assertFalse(check_pwd(input))
+
+    def test10(self):
+        input = "!aBcDeFg2"
+        self.assertFalse(check_pwd(input))
     
 if __name__ == '__main__':
     unittest.main()
